@@ -2,10 +2,10 @@ import telebot;
 bot = telebot.TeleBot('2145284613:AAHRPfaLDW_jPgNoD9aE7pgkmxDENPhAZ8U');
 @bot.message_handler(content_types=['text'])
 def get_text_messages(message):
-    if message.text == "rge":
-        bot.send_message(message.from_user.id, "Привет, чем я могу тебе помочь?")
+    if message.text == "salam":
+        bot.send_message(message.from_user.id, "alekum")
     elif message.text == "/help":
-        bot.send_message(message.from_user.id, "Напиши привет")
+        bot.send_message(message.from_user.id, "pomosh")
     else:
-        bot.send_message(message.from_user.id, "Я тебя не понимаю. Напиши /help.")
+        bot.send_message(message.from_user.id, "izvinis")
     bot.polling(none_stop=True, interval=0)

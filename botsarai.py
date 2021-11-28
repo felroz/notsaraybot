@@ -8,4 +8,5 @@ def get_text_messages(message):
         bot.send_message(message.from_user.id, "pomosh")
     else:
         bot.send_message(message.from_user.id, "izvinis")
-    bot.polling(none_stop=True, interval=0)
+        
+bot.polling(none_stop=True, interval=0)
